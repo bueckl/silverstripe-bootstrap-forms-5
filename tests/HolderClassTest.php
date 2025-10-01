@@ -74,8 +74,22 @@ class HolderClassTest extends SapphireTest
     {
         $field = TextField::create('Field', 'Field');
 
-        $field->setMessage('validationError', 'validation');
+        $field->setMessage('validationError', 'error');
 
         $this->assertStringContainsString('is-invalid', $field->extraClass());
+    }
+
+    /**
+     * testHolderValidationClass
+     *
+     * @return void
+     */
+    public function testHolderValidationClass()
+    {
+        $field = TextField::create('Field', 'Field');
+
+        $field->setMessage('validationError', 'error');
+
+        $this->assertStringContainsString('is-invalid', $field->holderClass());
     }
 }

@@ -45,6 +45,12 @@ trait HolderClass
             $classes[] = 'form-holder--no-label';
         }
 
+        // Add is-invalid class to holder when validation fails
+        $message = $this->getMessage();
+        if ($message && $this->getMessageType() == 'error') {
+            $classes[] = 'is-invalid';
+        }
+
         return implode(' ', $classes);
     }
 
@@ -129,7 +135,7 @@ trait HolderClass
     {
         $classes = parent::extraClass();
         $message = $this->getMessage();
-        if ($message && $this->getMessageType() == 'validation') {
+        if ($message && $this->getMessageType() == 'error') {
             $classes .= ' is-invalid';
         }
 
