@@ -1,3 +1,3 @@
 <% if $Message %>
-<div class="message $getBootstrapFeedbackClass">$Message</div>
+<div class="message $getBootstrapFeedbackClass d-block">$Message</div>
 <% end_if %>

@@ -90,4 +90,20 @@ trait BootstrapValidation
 
         return $classes;
     }
+
+    /**
+     * Public accessor for Bootstrap validation class - used in templates
+     * Returns the validation class for the current field's message state
+     *
+     * @return string Bootstrap validation class ('is-invalid', 'is-valid', or '')
+     */
+    public function BootstrapValidationClass()
+    {
+        $message = $this->getMessage();
+        if ($message) {
+            $messageType = $this->getMessageType();
+            return $this->getBootstrapValidationClass($messageType);
+        }
+        return '';
+    }
 }

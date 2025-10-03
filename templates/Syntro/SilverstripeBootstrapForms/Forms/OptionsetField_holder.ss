@@ -1,4 +1,4 @@
-<div id="$HolderID">
+<div id="$HolderID" class="$BootstrapValidationClass">
 	<% include Syntro/SilverstripeBootstrapForms/Forms/Includes/Label %>
   <div class="$holderClass">
   	$Field
