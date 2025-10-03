@@ -1,6 +1,6 @@
-<div id="$HolderID" class="$holderClass">
+<div id="$HolderID">
 	<% include Syntro/SilverstripeBootstrapForms/Forms/Includes/Label %>
-  <div class="">
+  <div class="$holderClass">
   	$Field
   </div>
   <% include Syntro/SilverstripeBootstrapForms/Forms/Includes/Description %>
