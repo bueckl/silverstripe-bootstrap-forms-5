@@ -12,7 +12,7 @@ use SilverStripe\Forms\TextField as BackendTextField;
 class TextField extends BackendTextField
 {
 
-    use HolderClass;
+    use HolderClass, BootstrapValidation;
 
     /**
      * Returns an input field.

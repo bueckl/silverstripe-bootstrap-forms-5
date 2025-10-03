@@ -6,10 +6,10 @@ use SilverStripe\Dev\SapphireTest;
 use Syntro\SilverstripeBootstrapForms\Forms\TextField;
 
 /**
- * Test the correct handling of the
+ * Test the correct handling of the Bootstrap validation classes
  * @author Matthias Leutenegger <hello@syntro.ch>
  */
-class HolderClassTest extends SapphireTest
+class BootstrapValidationTest extends SapphireTest
 {
     protected static $fixture_file = './fixture.yml';
 

@@ -12,7 +12,7 @@ use SilverStripe\Forms\OptionsetField as BackendOptionsetField;
 class OptionsetField extends BackendOptionsetField
 {
 
-    use HolderClass;
+    use HolderClass, BootstrapValidation;
 
     /**
      * Returns an input field.

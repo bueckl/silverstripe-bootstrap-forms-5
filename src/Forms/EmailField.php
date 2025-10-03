@@ -12,7 +12,7 @@ use SilverStripe\Forms\EmailField as BackendEmailField;
 class EmailField extends BackendEmailField
 {
 
-    use HolderClass;
+    use HolderClass, BootstrapValidation;
 
     /**
      * Returns an input field.

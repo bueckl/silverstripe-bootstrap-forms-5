@@ -12,7 +12,7 @@ use SilverStripe\Forms\DropdownField as BackendDropdownField;
 class DropdownField extends BackendDropdownField
 {
 
-    use HolderClass;
+    use HolderClass, BootstrapValidation;
 
     /**
      * Returns an input field.

@@ -12,7 +12,7 @@ use SilverStripe\Forms\CheckboxSetField as BackendCheckboxSetField;
 class CheckboxSetField extends BackendCheckboxSetField
 {
 
-    use HolderClass;
+    use HolderClass, BootstrapValidation;
 
     /**
      * Returns an input field.

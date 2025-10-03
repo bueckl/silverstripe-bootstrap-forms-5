@@ -11,7 +11,7 @@ use SilverStripe\Forms\ReadonlyField as BackendReadonlyField;
  */
 class ReadonlyField extends BackendReadonlyField
 {
-    use HolderClass;
+    use HolderClass, BootstrapValidation;
 
   /**
    * Returns a readonly field.

@@ -13,7 +13,7 @@ use SilverStripe\Forms\Validator;
 class PhoneField extends FormField
 {
 
-    use HolderClass;
+    use HolderClass, BootstrapValidation;
 
     /**
      * @var string

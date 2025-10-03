@@ -13,7 +13,7 @@ use SilverStripe\Forms\CheckboxField as BackendCheckboxField;
 class CheckboxField extends BackendCheckboxField
 {
 
-    use HolderClass;
+    use HolderClass, BootstrapValidation;
 
     /**
      * Ensures that the methods are wrapped in the correct type and
